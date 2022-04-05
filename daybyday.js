@@ -13,8 +13,6 @@
     #container;
     /** @private @const {!Date} */
     #date;
-    /** @private @const {!Node} */
-    #calendar;
 
     /**
      * @param {!Node} container The element that the user wants to load the day-by-day calendar widget into.
@@ -94,7 +92,7 @@
           dateCell.className += 'today';
         }
         const time = document.createElement('time');
-        time.datetime = `${currentDay.getFullYear()}-${currentDay.getMonth() + 1}-${currentDay.getDate()}`;
+        time.dateTime = `${currentDay.getFullYear()}-${currentDay.getMonth() + 1}-${currentDay.getDate()}`;
         time.innerText = currentDay.getDate();
         dateCell.appendChild(time);
         dateGrid.appendChild(dateCell);
