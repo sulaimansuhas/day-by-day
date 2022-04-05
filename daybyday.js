@@ -94,7 +94,7 @@
           dateCell.className += 'today';
         }
         const time = document.createElement('time');
-        time.datetime = `${currentDay.getFullYear()}-${currentDay.getMonth() + 1}-${currentDay.getDate()}`;
+        time.dateTime = `${currentDay.getFullYear()}-${currentDay.getMonth() + 1}-${currentDay.getDate()}`;
         time.innerText = currentDay.getDate();
         dateCell.appendChild(time);
         dateGrid.appendChild(dateCell);
