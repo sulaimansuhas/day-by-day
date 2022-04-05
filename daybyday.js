@@ -13,8 +13,6 @@
     #container;
     /** @private @const {!Date} */
     #date;
-    /** @private @const {!Node} */
-    #calendar;
 
     /**
      * @param {!Node} container The element that the user wants to load the day-by-day calendar widget into.
