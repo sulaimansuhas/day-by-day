@@ -4,6 +4,28 @@
     grid-template-columns: repeat(7, 1fr);
 }
 
+.calendar {
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+}
+
+.day-of-week {
+	margin: .25em;
+	border-bottom: 2px;
+	border-bottom-style:solid;
+	border-bottom-color:black;
+}
+
+
+.day-of-week > * {
+	/* font-size: 0.7em; */
+	/* font-weight: 500; */
+	/* letter-spacing: 0.1em; */
+	/* font-variant: small-caps; */
+	text-align: center;
+}
+
 .day-by-day {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,6 +34,31 @@
 .month-name {
     grid-column-start: 1;
     grid-column-end: 4;
+    text-align: center;
 }
 
+.date-grid button{
+	position: relative;
+	border: 0;
+	width: 4.5ch;
+	height:4.5ch;
+	border-radius: 50%;
+	background-color: transparent;
+}
+.arrow {
+	place-self: center;
+}
+.arrow > button {
+	border-radius: 50%;
+	border:none;
+	color: white;
+	text-align: center;
+	font-size:16px;
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	display: inline-block;
+	transform: translateY(-50%);
+}
 
