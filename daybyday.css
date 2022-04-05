@@ -1,0 +1,17 @@
+.day-of-week,
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day-by-day {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.month-name {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
